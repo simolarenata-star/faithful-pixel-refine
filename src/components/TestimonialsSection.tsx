@@ -1,21 +1,25 @@
-import { MessageCircle } from "lucide-react";
+import { Heart } from "lucide-react";
 
 const testimonials = [
   {
     message: "Eduardo, passando para agradecer por todas as dicas, foram de extrema importância para progressão do meu crescimento, sem dúvidas são detalhes que fazem a diferença. Suas dicas e ideias fez toda diferença durante esse tempo.",
-    time: "9:11 da manhã"
+    time: "9:11 da manhã",
+    hasHeart: false
   },
   {
-    message: "Tudo certo, todos fecharam. Principalmente a minha última avaliação, a mãe da paciente me encheu de perguntas e eu respondi todas, ela fechou comigo na hora. Gratidão, suas dicas foram de extrema importância",
-    time: "4:37 da tarde"
+    message: "Tudo certo, todos fecharam. Principalmente a minha última avaliação, a mãe da paciente me encheu de perguntas e eu respondi todas, ela fechou comigo na hora. Gratidão, suas dicas foram de extrema importância ❤️",
+    time: "4:37 da tarde",
+    hasHeart: true
   },
   {
     message: "Cara, segue a todo vapor, fiz avaliação em uma paciente pela estratégia que você me disse, agora tenho mais 2 avaliações para serem feitas semana que vem",
-    time: "8:41 da manhã"
+    time: "8:41 da manhã",
+    hasHeart: false
   },
   {
-    message: "Eu só estou no começo da mentoria e já mudou totalmente minha mentalidade, essa visão de novas oportunidades na fisioterapia, isso motiva, impulsiona, obrigada por já entregar tanto no primeiro contato, tanta clareza, é nítido a propriedade que vc tem de fala, isso dá uma segurança imensa... sair dessa rotina extremamente exaustiva e ver que dá pra ser tudo mais leve e mais rentável não tem preço...",
-    time: "8:43 da noite"
+    message: "Eu só estou no começo da mentoria e já mudou totalmente minha mentalidade, essa visão de novas oportunidades na fisioterapia, isso motiva, impulsiona, obrigada por já entregar tanto no primeiro contato, tanta clareza, é nítido a propriedade que vc tem de fala, isso dá uma segurança imensa... sair dessa rotina extremamente exaustiva e ver que dá pra ser tudo mais leve e mais rentável não tem preço... tenho certeza que vai ser um caminho de muitas conquistas. Que JÁ está sendo em tão pouco tempo. Ansiosa para as próximas reuniões. Só tenho a te agradecer por tanto ❤️",
+    time: "8:43 da noite",
+    hasHeart: true
   }
 ];
 
@@ -35,7 +39,7 @@ const TestimonialsSection = () => {
             >
               <div className="flex items-start gap-3">
                 <div className="bg-primary/20 p-2 rounded-full">
-                  <MessageCircle className="w-5 h-5 text-primary" />
+                  <Heart className="w-5 h-5 text-primary" />
                 </div>
                 <div className="flex-1">
                   <p className="text-foreground text-sm md:text-base leading-relaxed mb-3">
