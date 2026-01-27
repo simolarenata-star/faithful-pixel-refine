@@ -7,12 +7,15 @@ const HeroSection = () => {
     <section className="section-dark min-h-screen py-8 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Logo centralizado */}
-        <div className="flex justify-center mb-8">
+        <div className="flex flex-col items-center mb-8">
           <img 
             src={logo} 
             alt="FisiosPro" 
-            className="h-20 md:h-28 object-contain"
+            className="h-20 md:h-28 object-contain mb-4"
           />
+          <p className="text-lg md:text-xl text-muted-foreground text-center">
+            O método que transforma sua carreira com clareza, direção e resultados reais.
+          </p>
         </div>
 
         {/* Headline */}

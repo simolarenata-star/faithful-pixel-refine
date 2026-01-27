@@ -19,12 +19,12 @@ const MetodoSection = () => {
             A verdade é cruel: <span className="text-foreground font-semibold">ter currículo cheio não enche agenda</span>. Enquanto você acumula diplomas na parede, continua patinando na hora de precificar, vender e fidelizar. Você se tornou uma enciclopédia ambulante, mas sente que sua carreira não sai do lugar.
           </p>
           
-          <p className="text-foreground font-semibold text-xl">
+          <p className="text-xl">
             Cursos técnicos te dão ferramentas de trabalho. O FisiosPro te dá o manual de instruções do negócio.
           </p>
           
           <p>
-            Nós não vamos te ensinar uma nova manobra. Vamos te ensinar a construir a estrutura que permite cobrar o valor justo pelo que você já faz — seja no consultório, na clínica ou no domicílio.
+            Nós não vamos te ensinar uma nova manobra. Vamos te ensinar a <span className="font-semibold">construir a estrutura</span> que permite cobrar o valor justo pelo que você já faz — seja no consultório, na clínica ou no domicílio.
           </p>
         </div>
       </div>
