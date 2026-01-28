@@ -24,7 +24,7 @@ const MetodoSection = () => {
           </p>
           
           <p>
-            Nós não vamos te ensinar uma nova manobra. Vamos te ensinar a <span className="font-semibold">construir a estrutura</span> que permite cobrar o valor justo pelo que você já faz — seja no consultório, na clínica ou no domicílio.
+            Nós não vamos te ensinar uma nova manobra. Vamos te ensinar a <span className="font-semibold text-white">construir a estrutura</span> que permite cobrar o valor justo pelo que você já faz — seja no consultório, na clínica ou no domicílio.
           </p>
         </div>
       </div>
