@@ -5,25 +5,29 @@ const bonus = [
     numero: 1,
     titulo: "A Bíblia dos Scripts de Vendas",
     descricao: "O que falar, como cobrar e como fechar no WhatsApp e presencialmente. Copie, cole e venda.",
-    valorOriginal: "R$ 197,00"
+    valorOriginal: "R$ 197,00",
+    textoGratis: "(Mas hoje sai de graça)"
   },
   {
     numero: 2,
     titulo: "Dashboard Financeiro Automatizado",
     descricao: "Pare de anotar em caderno. Tenha o controle do seu lucro e previsibilidade em uma única tela inteligente.",
-    valorOriginal: "R$ 297,00"
+    valorOriginal: "R$ 297,00",
+    textoGratis: "(Mas hoje sai de graça)"
   },
   {
     numero: 3,
     titulo: "Guia \"Google Meu Negócio\" (Imã de Pacientes)",
     descricao: "O passo a passo para aparecer no topo das buscas do seu bairro sem gastar 1 real com anúncios.",
-    valorOriginal: "R$ 497,00"
+    valorOriginal: "R$ 497,00",
+    textoGratis: "(Mas hoje sai de graça)"
   },
   {
     numero: 4,
     titulo: "O Checklist da Rotina Perfeita",
     descricao: "O organizador semanal para você nunca mais se sentir perdido na segunda-feira.",
-    valorOriginal: "R$ 97,00"
+    valorOriginal: "R$ 97,00",
+    textoGratis: "(Mas hoje sai de graça)"
   }
 ];
 
@@ -52,8 +56,8 @@ const BonusSection = () => {
                   <h3 className="font-bold text-foreground mb-2">{item.titulo}</h3>
                   <p className="text-muted-foreground text-sm mb-2">{item.descricao}</p>
                   <p className="text-sm">
-                    <span className="text-muted-foreground line-through">{item.valorOriginal}</span>
-                    <span className="text-accent font-bold ml-2">GRÁTIS</span>
+                    <span className="text-muted-foreground">{item.valorOriginal}</span>
+                    <span className="text-accent font-bold ml-2">{item.textoGratis}</span>
                   </p>
                 </div>
               </div>
@@ -74,7 +78,7 @@ const BonusSection = () => {
             
             <div className="bg-card rounded-lg p-4 inline-block mb-6">
               <p className="text-destructive line-through text-xl">Valor Real: R$ 2.997,00</p>
-              <p className="text-accent font-bold text-3xl">HOJE: R$ 0,00</p>
+              <p className="text-green-500 font-bold text-4xl">GRÁTIS</p>
               <p className="text-muted-foreground text-sm">(Apenas para os primeiros inscritos)</p>
             </div>
 

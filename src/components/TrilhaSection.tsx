@@ -7,10 +7,10 @@ const trilhaFaixas = [
     beltClass: "belt-white",
     itens: [
       "📍 Diagnóstico de Carreira: Identificação das travas que impedem seu crescimento.",
-      "Definição de Metas Claras: Onde você quer chegar financeiramente e profissionalmente.",
-      "Nicho Lucrativo: Como escolher ou refinar sua área de atuação para ser referência."
+      "🎯 Definição de Metas Claras: Onde você quer chegar financeiramente e profissionalmente.",
+      "🔍 Nicho Lucrativo: Como escolher ou refinar sua área de atuação para ser referência."
     ],
-    evolucao: "Tem clareza absoluta do seu momento atual e um objetivo financeiro definido."
+    evolucao: "🚀 Tem clareza absoluta do seu momento atual e um objetivo financeiro definido."
   },
   {
     faixa: "FAIXA AZUL",
@@ -19,11 +19,11 @@ const trilhaFaixas = [
     subtitulo: "(A fase de arrumar a casa, precificar certo e organizar a rotina)",
     beltClass: "belt-blue",
     itens: [
-      "Estrutura do Plano de Tratamento: Como montar propostas irrecusáveis.",
-      "Precificação Inteligente: A matemática exata para cobrar o valor justo e ter lucro real.",
-      "Posicionamento Digital Básico: Arrumando a \"vitrine\" do seu negócio."
+      "📝 Estrutura do Plano de Tratamento: Como montar propostas irrecusáveis.",
+      "💰 Precificação Inteligente: A matemática exata para cobrar o valor justo e ter lucro real.",
+      "💻 Posicionamento Digital Básico: Arrumando a \"vitrine\" do seu negócio."
     ],
-    evolucao: "Tem seus preços ajustados, rotina organizada e sabe exatamente o que vender."
+    evolucao: "🚀 Tem seus preços ajustados, rotina organizada e sabe exatamente o que vender."
   },
   {
     faixa: "FAIXA ROXA",
@@ -32,12 +32,12 @@ const trilhaFaixas = [
     subtitulo: "(A fase de perder o medo de vender e garantir que o paciente fique)",
     beltClass: "belt-purple",
     itens: [
-      "Roteiros de Vendas (Scripts): O que falar no WhatsApp e pessoalmente para fechar contratos.",
-      "Quebra de Objeções: Como responder quando o paciente diz \"tá caro\" ou \"vou pensar\".",
-      "3 Formatos de Planos: Modelos prontos de planos de tratamento para diferentes perfis.",
-      "Estratégias de Fidelização: Técnicas para renovação de planos de tratamento completo."
+      "🗣️ Roteiros de Vendas (Scripts): O que falar no WhatsApp e pessoalmente para fechar contratos.",
+      "🛡️ Quebra de Objeções: Como responder quando o paciente diz \"tá caro\" ou \"vou pensar\".",
+      "📄 3 Formatos de Planos: Modelos prontos de planos de tratamento para diferentes perfis.",
+      "❤️ Estratégias de Fidelização: Técnicas para renovação de planos de tratamento completo."
     ],
-    evolucao: "Para de vender sessões avulsas e começa a fechar planos de tratamento completo com segurança."
+    evolucao: "🚀 Para de vender sessões avulsas e começa a fechar planos de tratamento completo com segurança."
   },
   {
     faixa: "FAIXA MARROM",
@@ -46,11 +46,11 @@ const trilhaFaixas = [
     subtitulo: "(A fase de acelerar a chegada de novos pacientes)",
     beltClass: "belt-brown",
     itens: [
-      "Tráfego Pago (Google e Meta Ads): Como fazer anúncios que trazem pacientes qualificados.",
-      "Landing Page de Alta Conversão: A estrutura da página que transforma cliques em agendamentos.",
-      "Segmentação de Público: Atingindo a pessoa certa, no bairro certo, com a dor certa."
+      "📢 Tráfego Pago (Google e Meta Ads): Como fazer anúncios que trazem pacientes qualificados.",
+      "🌐 Landing Page de Alta Conversão: A estrutura da página que transforma cliques em agendamentos.",
+      "🎯 Segmentação de Público: Atingindo a pessoa certa, no bairro certo, com a dor certa."
     ],
-    evolucao: "Tem um fluxo constante de novos interessados chegando no seu WhatsApp toda semana."
+    evolucao: "🚀 Tem um fluxo constante de novos interessados chegando no seu WhatsApp toda semana."
   },
   {
     faixa: "FAIXA PRETA",
@@ -59,12 +59,12 @@ const trilhaFaixas = [
     subtitulo: "(A fase de escalar, gerir e conquistar liberdade)",
     beltClass: "belt-black",
     itens: [
-      "Visão de Negócio e Escala: Saindo do operacional exaustivo para assumir o comando estratégico da sua carreira.",
-      "Gestão de Pessoas e Parceiros: Como crescer sua equipe sem perder a qualidade.",
-      "Indicadores de CEO: Olhando para os números estratégicos e não apenas operacionais.",
-      "Liberdade de Tempo: Processos que permitem que o negócio rode com previsibilidade."
+      "🏢 Visão de Negócio e Escala: Saindo do operacional exaustivo para assumir o comando estratégico da sua carreira.",
+      "👥 Gestão de Pessoas e Parceiros: Como crescer sua equipe sem perder a qualidade.",
+      "📊 Indicadores de CEO: Olhando para os números estratégicos e não apenas operacionais.",
+      "🕊️ Liberdade de Tempo: Processos que permitem que o negócio rode com previsibilidade."
     ],
-    evolucao: "Seu faturamento cresce com consistência e você tem liberdade para escolher como e quando atuar."
+    evolucao: "🚀 Seu faturamento cresce com consistência e você tem liberdade para escolher como e quando atuar."
   }
 ];
 
@@ -118,7 +118,7 @@ const TrilhaSection = () => {
 
         <div className="mt-12 text-center">
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-            O segredo não é a velocidade, é a direção. Você não precisa adivinhar o próximo passo. O GPS já está pronto. Basta seguir a trilha para transformar sua rotina caótica em uma carreira sólida e lucrativa.
+            O segredo não é a velocidade, é a direção. Você não precisa adivinhar o próximo passo. O GPS já está pronto. Basta seguir a trilha para transformar sua rotina caótica em uma carreira <span className="font-bold text-black">sólida e lucrativa</span>.
           </p>
           <a 
             href={hotmartLink}

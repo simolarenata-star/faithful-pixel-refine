@@ -4,7 +4,7 @@ const OQueRecebeSection = () => {
   const itens = [
     {
       titulo: "Trilha Completa de Aulas (Do Zero à Escala)",
-      descricao: "Acesso ao acervo estratégico com o passo a passo prático de vendas, posicionamento, fidelização e gestão. Sem teoria chata, direto ao ponto."
+      descricao: <>Acesso por <strong>1 ano (12 meses)</strong> ao acervo estratégico com o passo a passo prático de vendas, posicionamento, fidelização e gestão. Sem teoria chata, direto ao ponto.</>
     },
     {
       titulo: "Caixa de Ferramentas de Gestão (Editáveis)",

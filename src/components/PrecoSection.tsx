@@ -34,7 +34,7 @@ const PrecoSection = () => {
           <div className="border-t border-border pt-6 mt-6">
             <div className="flex justify-between items-center">
               <span className="text-xl font-bold text-foreground">VALOR TOTAL DE TUDO ISSO:</span>
-              <span className="text-xl font-bold text-destructive line-through">R$ 5.876,00</span>
+              <span className="text-xl font-bold text-foreground">R$ 5.876,00</span>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ const PrecoSection = () => {
           />
           <div>
             <h3 className="text-xl font-bold text-foreground mb-3">
-              Garantia Incondicional de 30 Dias
+              🛡️ Garantia Incondicional de 30 Dias
             </h3>
             <p className="text-muted-foreground">
               O risco é todo meu. Entre, assista às aulas, use as planilhas e participe da primeira mentoria. Se você achar que não é para você, eu devolvo 100% do seu dinheiro. Sem perguntas, sem letras miúdas. Basta um e-mail.
