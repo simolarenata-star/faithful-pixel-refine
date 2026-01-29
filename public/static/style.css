@@ -50,15 +50,16 @@ strong {
 }
 
 .site-logo {
-    width: 220px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 900px;
     height: auto;
 }
 
-/* Responsivo - Logo menor em mobile */
+/* Responsivo - Logo em mobile */
 @media (max-width: 768px) {
     .site-logo {
-        width: 180px;
+        width: 100%;
+        max-width: 100%;
     }
     
     .site-header {
