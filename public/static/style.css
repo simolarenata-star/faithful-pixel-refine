@@ -1,0 +1,548 @@
+/* ========================================
+   CSS RESET E BASE
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #0d1b2a;
+}
+
+/* ========================================
+   TIPOGRAFIA
+======================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* ========================================
+   HEADER - LOGO PRINCIPAL
+======================================== */
+.site-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #0d1b2a;
+}
+
+.site-logo {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsivo - Logo menor em mobile */
+@media (max-width: 768px) {
+    .site-logo {
+        width: 180px;
+    }
+    
+    .site-header {
+        padding: 30px 15px;
+    }
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px 60px;
+    background-color: #0d1b2a;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #00d9ff, #a8ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #a0aec0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* ========================================
+   SEÇÕES GERAIS
+======================================== */
+section {
+    padding: 60px 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #a0aec0;
+    margin-bottom: 40px;
+}
+
+.section-highlight {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #00d9ff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #a0aec0;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-highlight {
+        font-size: 1.25rem;
+    }
+}
+
+/* ========================================
+   VALUE SECTION
+======================================== */
+.value-section {
+    background-color: #152238;
+}
+
+/* ========================================
+   TARGET SECTION - Para Quem
+======================================== */
+.target-section {
+    background-color: #0d1b2a;
+}
+
+.target-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.target-card {
+    background-color: #152238;
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+.target-card:hover {
+    border-color: #00d9ff;
+}
+
+.target-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.target-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.target-card p {
+    color: #a0aec0;
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   JOURNEY SECTION - Trilha das Faixas
+======================================== */
+.journey-section {
+    background-color: #152238;
+}
+
+.belt-card {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    background-color: #1a2d47;
+    border-radius: 12px;
+    padding: 25px;
+    border-left: 5px solid;
+}
+
+.belt-white { border-left-color: #ffffff; }
+.belt-blue { border-left-color: #3b82f6; }
+.belt-purple { border-left-color: #8b5cf6; }
+.belt-brown { border-left-color: #b45309; }
+.belt-black { border-left-color: #000000; }
+
+.belt-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.belt-badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.belt-badge.white { background-color: #ffffff; color: #0d1b2a; }
+.belt-badge.blue { background-color: #3b82f6; color: #ffffff; }
+.belt-badge.purple { background-color: #8b5cf6; color: #ffffff; }
+.belt-badge.brown { background-color: #b45309; color: #ffffff; }
+.belt-badge.black { background-color: #000000; color: #ffffff; }
+
+.belt-header h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.belt-list {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.belt-list li {
+    padding: 8px 0;
+    color: #a0aec0;
+    font-size: 1rem;
+}
+
+.belt-evolution {
+    color: #00d9ff;
+    font-size: 0.9rem;
+    font-style: italic;
+    border-top: 1px solid #2d3748;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   BENEFITS SECTION
+======================================== */
+.benefits-section {
+    background-color: #0d1b2a;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background-color: #152238;
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    padding: 25px;
+    transition: border-color 0.3s ease;
+}
+
+.benefit-card:hover {
+    border-color: #00d9ff;
+}
+
+.benefit-icon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.benefit-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.benefit-card p {
+    color: #a0aec0;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   BONUS SECTION
+======================================== */
+.bonus-section {
+    background-color: #152238;
+}
+
+.bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.bonus-card {
+    background-color: #1a2d47;
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+}
+
+.bonus-highlight {
+    border-color: #a8ff00;
+    background: linear-gradient(135deg, #1a2d47, #0d2818);
+}
+
+.bonus-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #00d9ff;
+    opacity: 0.3;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.bonus-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    padding-right: 50px;
+}
+
+.bonus-value {
+    color: #a0aec0;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.bonus-free {
+    color: #00d9ff;
+    font-weight: 600;
+}
+
+.price-crossed {
+    text-decoration: line-through;
+    color: #ef4444;
+}
+
+.bonus-gratis {
+    color: #22c55e;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: block;
+    margin-top: 5px;
+}
+
+.total-value {
+    text-align: center;
+    padding: 30px;
+    background-color: #1a2d47;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.total-value p {
+    color: #a0aec0;
+    margin-bottom: 10px;
+}
+
+.total-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #a8ff00;
+}
+
+/* ========================================
+   PRICING SECTION
+======================================== */
+.pricing-section {
+    background-color: #0d1b2a;
+}
+
+.pricing-card {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #152238;
+    border: 2px solid #00d9ff;
+    border-radius: 20px;
+    padding: 40px 30px;
+}
+
+.pricing-from {
+    color: #a0aec0;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.pricing-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #a8ff00;
+    margin-bottom: 5px;
+}
+
+.pricing-cash {
+    color: #a0aec0;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #a8ff00;
+    color: #0d1b2a;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 18px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.guarantee {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #2d3748;
+}
+
+.guarantee-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.guarantee p {
+    color: #a0aec0;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.guarantee p strong {
+    color: #ffffff;
+}
+
+/* ========================================
+   FAQ SECTION
+======================================== */
+.faq-section {
+    background-color: #152238;
+}
+
+.faq-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #1a2d47;
+    border: 1px solid #2d3748;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    color: #a0aec0;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+.site-footer {
+    background-color: #0a1421;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid #2d3748;
+}
+
+.site-footer p {
+    color: #a0aec0;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   RESPONSIVIDADE GERAL
+======================================== */
+@media (max-width: 480px) {
+    section {
+        padding: 40px 15px;
+    }
+    
+    .pricing-value {
+        font-size: 2rem;
+    }
+    
+    .total-price {
+        font-size: 2rem;
+    }
+    
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+}
