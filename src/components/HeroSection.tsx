@@ -10,12 +10,9 @@ const HeroSection = () => {
         <div className="flex flex-col items-center mb-8">
           <img 
             src={logo} 
-            alt="FisiosPro" 
-            className="h-20 md:h-28 object-contain mb-4"
+            alt="FisiosPro – Estratégia para Fisioterapeutas" 
+            className="h-24 md:h-32 object-contain"
           />
-          <p className="text-lg md:text-xl text-muted-foreground text-center">
-            O método que transforma sua carreira com clareza, direção e resultados reais.
-          </p>
         </div>
 
         {/* Headline */}
