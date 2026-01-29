@@ -11,7 +11,7 @@ const HeroSection = () => {
           <img 
             src={logo} 
             alt="FisiosPro – Estratégia para Fisioterapeutas" 
-            className="w-full max-w-3xl md:max-w-4xl object-contain"
+            className="w-full max-w-lg md:max-w-xl object-contain"
           />
         </div>
 
